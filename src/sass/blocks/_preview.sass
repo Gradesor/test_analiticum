@@ -1,0 +1,48 @@
+.preview
+	margin-top: 7px
+	background-image: url('../img/preview-bg.jpg')
+	background-repeat: no-repeat
+	background-position: center
+	background-size: cover
+	height: 100%
+	color: #fff
+	display: flex
+	justify-content: center
+	align-items: center
+	&__block
+		width: 437px
+		text-align: center
+	&__subtitle
+		font-size: 24px
+		margin-bottom: 25px
+	&__title
+		font-size: 54px
+		margin-bottom: 25px
+		text-transform: uppercase
+		line-height: 70px
+	&__btn
+		width: 220px
+		height: 50px
+		background-color: $text-hover
+		border-radius: 2px
+		display: flex
+		justify-content: center
+		align-items: center
+		border: none
+		color: #fff
+		display: block
+		margin: 0 auto
+		text-transform: uppercase
+@media (max-width: 576px) and (min-width: 320px)
+	.preview
+		&__block
+			width: 252px
+		&__subtitle
+			display: none
+		&__title
+			font-size: 30px
+			line-height: 40px
+		
+
+
+
