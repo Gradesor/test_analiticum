@@ -1,0 +1,192 @@
+.nav
+	padding-top: 9px	
+	&__block
+		display: flex
+		justify-content: space-between
+	&__img
+		width: 90px
+		height: 65px
+	&-menu
+		display: flex
+		justify-content: flex-start
+		&__info
+			display: flex
+			justify-content: flex-start
+			align-items: flex-end
+			margin-right: 56px
+			padding-bottom: 14px
+		&__link
+			text-decoration: none
+			color: $text
+			font-size: 14px
+			margin-right: 33px
+			&:last-of-type
+				margin-right: 0 
+	&-lid
+		display: flex
+		justify-content: flex-start
+		&__icons
+			display: flex
+			justify-content: flex-start
+			align-items: flex-end
+			margin-right: 11px
+			padding-bottom: 14px
+		&__icon
+			+icon
+			text-decoration: none
+			color: $text-hover
+			width: 21px
+			height: 21px
+			border-radius: 50%
+			border: 1px solid #4c9f35
+			display: flex
+			justify-content: center
+			align-items: center
+			&:before
+				font-size: 10px
+			&:nth-child(1)
+				margin-right: 11px
+				&:before
+					content: '\e900'
+			&:nth-child(2)
+				&:before
+					content: '\e901'
+		&__block
+			& a[class="nav-menu__link"]
+				margin-right: 0
+				margin-bottom: 10px
+				display: block
+		&__btn
+			width: 126px
+			height: 30px
+			border-radius: 2px
+			border: 1px solid $text
+			color: $text
+			display: flex
+			justify-content: center
+			align-items: center
+			background-color: #fff
+			font-size: 14px
+	&-burg
+		display: none
+		&_mob
+			display: none
+		&__menu
+			display: none
+@media (max-width: 1000px)
+	.nav
+		&-menu
+			&__info
+				display: none
+			&__link
+				margin-right: 0
+				margin-bottom: 10px			
+		&-burg
+			tap-highlight-color: none
+			display: block
+			width: 30px
+			height: 30px
+			text-decoration: none
+			position: relative
+			cursor: pointer
+			&:focus
+				outline: none
+			& span,span:before,span:after
+				position: absolute
+				top: 50%
+				left: 0
+				width: 30px
+				height: 3px
+				background-color: $burger
+			& span:before,span:after
+				content: ''
+				transition: 0.2s
+				display: block
+			& span:before
+				transform: translateY(-8px)				
+			& span:after
+				transform: translateY(5px)
+			&_active
+				& span
+					height: 0
+					&:before
+						transform: rotate(45deg)
+					&:after
+						transform: rotate(-45deg)
+			&_mob
+				display: none
+			&__menu
+				margin-top: 10px
+				flex-direction: column				
+				display: none
+				&_active
+					display: flex
+				& div[class="nav-menu__info"]
+					display: flex
+					align-items: flex-start
+					flex-direction: column
+				& div
+					display: none
+		&__block
+			border-bottom: 2px solid $text
+			padding-bottom: 10px					
+@media (max-width: 768px)
+	.nav
+		&-lid
+			&__icons
+				display: none			
+		&-burg__menu			
+			& div[class="nav-menu__info"]
+				padding-bottom: 5px
+			& div[class="nav-lid"]
+				display: flex
+				flex-direction: column
+				& div
+					display: flex
+				& button, a[class="nav-menu__link"]
+					display: none				
+@media (max-width: 576px)
+	.nav
+		position: relative
+		&__block
+			align-items: center
+			border: none
+		&-lid
+			display: none
+			&__btn
+				background-color: transparent				
+			&__block
+				align-items: center
+			&__btn
+				margin-bottom: 15px
+		&-burg
+			display: none
+			&_active
+				position: absolute
+				right: 25px
+				top: 21px
+				z-index: 11
+			&_mob
+				display: block
+			&__menu
+				position: absolute
+				z-index: 10
+				top: -9px
+				left: 0
+				padding-top: 32px
+				padding-left: 32px
+				width: 100%
+				height: 100vh
+				background-color: rgba(81, 62, 49, 0.91)
+				& *
+					color: #fff
+					border-color: #fff
+		&-burg__menu						
+			& div[class="nav-lid"]				
+				& button, a[class="nav-menu__link"]
+					display: flex
+				& a[class="nav-menu__link"]
+					margin-right: 10px
+
+
+		
