@@ -1,0 +1,116 @@
+.bid
+	background-image: url('../img/bid-bg.jpg')
+	background-repeat: no-repeat
+	background-position: center
+	background-size: cover
+	height: 100%
+	display: flex
+	align-items: center
+	color: #fff
+	display: flex
+	justify-content: center
+	align-items: center
+	&__block
+		display: flex
+		flex-direction: column
+		align-items: center
+	&__title
+		display: inline-block
+		text-transform: uppercase
+		margin-bottom: 65px
+		&:after
+			width: 14px
+			height: 12px
+			right: -30px
+			bottom: 45%
+		&:before
+			left: -30px
+			bottom: 45%
+			width: 14px
+			height: 12px
+	&-form
+		& input
+			width: 100%
+			height: 50px
+			color: $text
+			padding-left: 18px
+			font-size: 20px			
+			@include input-placeholder
+				color: $text
+				font-size: 20px
+			&:focus
+				outline: none
+				border: 1px solid $burger
+		&__row
+			display: flex			
+			& div
+				width: 50%
+				&:nth-of-type(1)
+					margin-right: 16px
+		&__wrap
+			position: relative
+			margin-bottom: 16px
+			&:nth-of-type(3)
+				width: 782px				
+				& textarea
+					padding-left: 18px
+					padding-top: 15px	
+					width: 100%
+					height: 132px
+					resize: none
+					font-size: 20px
+					&:focus
+						outline: none
+						border: 1px solid $burger
+					@include input-placeholder
+						color: $text
+						font-size: 20px
+		&__btn			
+			margin: 0 auto
+			cursor: pointer
+			width: 220px
+			height: 50px
+			display: flex
+			justify-content: center
+			align-items: center
+			color: #fff
+			background-color: $text-hover
+			border: none
+			text-transform: uppercase
+			margin-bottom: 30px
+		&__text
+			margin: 0 auto
+			font-size: 20px
+			line-height: 30px
+			text-align: center
+			width: 592px
+			+med
+		&__link
+			+reg
+			color: $burger
+@media (max-width: 800px)
+	.bid
+		padding-top: 45px
+		padding-left: 29px
+		padding-right: 29px		
+		&__title
+			font-size: 21px
+			margin-bottom: 40px
+			line-height: 30px
+			&:before,&:after
+				display: none
+		&-form
+			&__row				
+				flex-direction: column
+				& div
+					width: 100%
+			&__wrap
+				&:nth-of-type(3)
+					width: 100%
+			&__text
+				font-size: 14px
+				width: 100%	
+			&__btn
+				font-size: 12px
+				width: 200px
+				height: 40px	

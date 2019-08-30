@@ -78,6 +78,19 @@ body
 		&__next:hover
 			transition: 0.3s
 			background-color: $btn-click
+	.bid-form__link:hover
+		transition: 0.3s
+		color: $text-hover
+@mixin input-placeholder
+  &.placeholder 		
+		&:-moz-placeholder
+			@content
+		&::-moz-placeholder
+			@content
+		&:-ms-input-placeholder
+			@content
+		&::-webkit-input-placeholder
+			@content
 @media (max-width: 768px)
 	.title
 		font-size: 20px
