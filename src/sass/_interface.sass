@@ -48,14 +48,20 @@ body
 .text-uppercase
 	text-transform: uppercase
 @media (min-width: 992px)
-	.nav-menu
-		&__link:hover
-			transition: 0.3s
-			color: $text-hover
-		&__icon:hover
-			transition: 0.3s
-			color: darken(desaturate($text-hover, 3.57), 8.63)
-			border-color: darken(desaturate($text-hover, 3.57), 8.63)
+	.nav
+		&-menu
+			&__link:hover
+				transition: 0.3s
+				color: $text-hover		
+		&-lid
+			&__icon:hover
+				transition: 0.3s
+				color: darken(desaturate($text-hover, 3.57), 8.63)
+				border-color: darken(desaturate($text-hover, 3.57), 8.63)
+			&__btn:hover
+				transition: 0.3s
+				color: $burger
+				border-color: $burger				
 	.btn:hover
 		transition: 0.3s
 		background-color:	lighten(desaturate($text-hover, 4.62), 7.25)
@@ -65,6 +71,13 @@ body
 		.about-lid__link
 			transition: 0.3s
 			color: $text-hover
+	.product-slider
+		&__prev:hover
+			transition: 0.3s
+			background-color: $btn-click
+		&__next:hover
+			transition: 0.3s
+			background-color: $btn-click
 @media (max-width: 768px)
 	.title
 		font-size: 20px
@@ -75,6 +88,9 @@ body
 		&-sect
 			padding-left: 18px
 			padding-right: 28px
+		&-prod
+			padding-left: 0
+			padding-right: 0
 	.title
 		&:before
 			left: 17px

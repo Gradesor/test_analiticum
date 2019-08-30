@@ -43,10 +43,11 @@
 			align-items: center
 			background-color: $burger
 			color: #fff
-			font-size: 15px
+			font-size: 17px
 			border-radius: 50%
 			&:before
 				content: '\e902'
+				font-weight: bold
 		&__next
 			transform: scale(-1, 1)
 			filter: FlipH
@@ -70,6 +71,7 @@
 	.product
 		&-info
 			flex-direction: column
+			justify-content: center
 			&__title
 				margin-right: 0
 				margin-bottom: 15px
@@ -80,8 +82,7 @@
 				width: 218px
 @media (max-width: 768px)
 	.product
-		&-slider
-			
+		&-slider			
 			&__block
 				width: 100%
 				margin: 0
