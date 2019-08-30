@@ -1,0 +1,82 @@
+.about
+	background-image: url('../img/about-bg.jpg')
+	background-repeat: no-repeat
+	background-position: center
+	background-size: cover
+	height: 100%
+	display: flex
+	align-items: center
+	color: $text
+	&__block
+		display: flex
+		justify-content: space-between
+		position: relative
+	&-left
+		&__title
+			text-transform: uppercase
+			display: inline-block
+			margin-bottom: 20px
+			&:before
+				display: none
+			&:after
+				right: -30px
+				bottom: 35%
+				width: 14px
+				height: 12px
+		&__text
+			width: 564px
+			margin-bottom: 64px
+			font-size: 20px
+			line-height: 30px
+			&:nth-of-type(2)
+				margin-bottom: 28px
+				width: 526px
+				+med
+	&-lid
+		display: flex
+		justify-content: flex-start
+		align-items: center
+		width: max-content
+		cursor: pointer
+		&__text
+			margin-right: 15px
+		&__link
+			+icon			
+			text-decoration: none
+			color: $about-icon
+			&:before
+				content: '\e901'
+				font-size: 14px
+				font-weight: bold
+	&__img
+		margin-top: 82px
+		margin-left: 133px
+@media (max-width: 1200px)
+	.about
+		&-left
+			width: 70%
+			&__text
+				width: 100%
+				&:nth-of-type(2)
+					width: 100%
+@media (max-width: 900px)
+	.about
+		display: table
+		padding-top: 43px
+		&-left
+			width: 100%						
+		&__block
+			flex-direction: column
+		&__img
+			margin: 0
+			margin-top: 40px
+@media (max-width: 576px) and (min-width: 320px)
+	.about
+		&-left
+			&__title
+				font-size: 20px
+				margin-bottom: 20px
+			&__text
+				font-size: 18px
+				margin-bottom: 20px
+			

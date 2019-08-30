@@ -19,6 +19,16 @@
 	font-style: normal;
 	font-display: block;
 }
+@font-face {
+	font-family: 'Oswald-Medium';
+	src: url('../fonts/Oswald-Medium/Oswald-Medium.eot');
+	src: url('../fonts/Oswald-Medium/Oswald-Medium.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Oswald-Medium/Oswald-Medium.woff') format('woff'),
+		url('../fonts/Oswald-Medium/Oswald-Medium.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
 @mixin icon {
 	font-family: 'icon' !important;
 	speak: none;
@@ -30,4 +40,7 @@
 }
 @mixin reg {
 	font-family: 'Oswald-Regular', sans-serif;
+}
+@mixin med {
+	font-family: 'Oswald-Medium',	sans-serif;
 }
