@@ -1,0 +1,93 @@
+.product
+	display: flex
+	align-items: center
+	justify-content: center
+	flex-direction: column
+	background-color: #513E31
+	&-info
+		height: 25vh		
+		display: flex		
+		align-items: center
+		color: #fff
+		&__title			
+			display: inline-block
+			margin-right: 45px
+			text-transform: uppercase
+			&:after
+				display: none
+			&:before
+				left: -30px
+				bottom: 35%
+				width: 14px
+				height: 12px
+		&__descr
+			width: 318px
+			font-size: 20px
+			line-height: 30px
+	&-slider
+		width: 100%
+		height: 75vh
+		&__item
+			width: 902px
+			& img
+				height: 100%
+				object-fit: cover
+		&__prev,&__next
+			position: relative
+			background-image: none
+			+icon
+			width: 44px
+			height: 44px
+			display: flex
+			justify-content: center
+			align-items: center
+			background-color: $burger
+			color: #fff
+			font-size: 15px
+			border-radius: 50%
+			&:before
+				content: '\e902'
+		&__next
+			transform: scale(-1, 1)
+			filter: FlipH
+		&__arrow
+			position: absolute		
+			top: 50%
+			width: 100%			
+		&__block
+			margin: 0 auto
+			width: 970px
+			display: flex
+			justify-content: space-between
+@media (max-width: 1000px)
+	.product
+		&-slider
+			&__item
+				width: 700px
+			&__block
+				width: 766px
+@media (max-width: 875px)
+	.product
+		&-info
+			flex-direction: column
+			&__title
+				margin-right: 0
+				margin-bottom: 15px
+				font-size: 20px
+			&__descr
+				font-size: 18px
+				line-height: 24px
+				width: 218px
+@media (max-width: 768px)
+	.product
+		&-slider
+			
+			&__block
+				width: 100%
+				margin: 0
+			&__item
+				width: 100%
+			
+
+			
+		
