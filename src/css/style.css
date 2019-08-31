@@ -2360,7 +2360,7 @@ button.swiper-pagination-bullet {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .bid-form__row div {
+  .bid-form__row div[class="bid-form__wrap"] {
     width: 100%;
   }
   .bid-form__wrap:nth-of-type(3) {
@@ -3262,5 +3262,54 @@ button.swiper-pagination-bullet {
 .popup-form__link {
   font-family: 'Oswald-Regular', sans-serif;
   color: #5CB544;
+}
+
+@media (max-width: 576px) and (min-width: 320px) {
+  .popup {
+    overflow: auto;
+  }
+  .popup__block {
+    margin-top: auto;
+    width: 90%;
+    height: auto;
+  }
+  .popup__exit {
+    top: 10px;
+    right: 8px;
+  }
+  .popup__exit:before {
+    font-size: 15px;
+  }
+  .popup__title {
+    padding-left: 15px;
+  }
+  .popup__title:before, .popup__title:after {
+    display: none;
+  }
+  .popup-form {
+    width: 90%;
+  }
+  .popup-form__wrap:nth-of-type(3) {
+    width: 100%;
+  }
+  .popup-form__text {
+    font-size: 14px;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .popup-form__btn {
+    font-size: 12px;
+    width: 200px;
+    height: 40px;
+  }
+  .popup-form__row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .popup-form__row div[class="popup-form__wrap"] {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=style.css.map */

@@ -115,4 +115,47 @@ $(document).ready(function () {
 	$('.popup__exit').on('click', function () {
 		$('.popup').removeClass('popup_active')
 	})
+	// плавная прокрутка якорей
+	$('a[name="anchor-bid"').on('click', function (e) {
+		$('html,body').stop().animate({
+			scrollTop: $('#bid').offset().top
+		}, 1000);
+		e.preventDefault();
+	});
+	$('a[name="anchor-about"').on('click', function (e) {
+		$('html,body').stop().animate({
+			scrollTop: $('#about').offset().top
+		}, 1000);
+		e.preventDefault();
+	});
+	$('a[name="anchor-product"').on('click', function (e) {
+		$('html,body').stop().animate({
+			scrollTop: $('#product').offset().top
+		}, 1000);
+		e.preventDefault();
+	});
+	$('a[name="anchor-production"').on('click', function (e) {
+		$('html,body').stop().animate({
+			scrollTop: $('#production').offset().top
+		}, 1000);
+		e.preventDefault();
+	});
+	$('a[name="anchor-feedback"').on('click', function (e) {
+		$('html,body').stop().animate({
+			scrollTop: $('#feedback').offset().top
+		}, 1000);
+		e.preventDefault();
+	});
+	$('a[name="anchor-promotions"').on('click', function (e) {
+		$('html,body').stop().animate({
+			scrollTop: $('#promotions').offset().top
+		}, 1000);
+		e.preventDefault();
+	});
+	$('a[name="anchor-cutaway"').on('click', function (e) {
+		$('html,body').stop().animate({
+			scrollTop: $('#cutaway').offset().top
+		}, 1000);
+		e.preventDefault();
+	});
 })
