@@ -40,7 +40,31 @@ $(document).ready(function () {
 			},
 			576: {
 				slidesPerView: 1
+			}
+		}
 
+	})
+	// слайдер с отзывами
+	var mySwipe3 = new Swiper('.feedback-slider', {
+		loop: true,
+		loopFillGroupWithBlank: true,
+		slidesPerView: 2,
+		slidesPerGroup: 1,
+		spaceBetween: 30,
+		nested: true,
+		pagination: {
+			el: '.feedback-slider__pagination',
+		},
+		breakpoints: {
+			1030: {
+				slidesPerView: 1,
+				spaceBetween: 20
+			},
+			768: {
+				slidesPerView: 2
+			},
+			576: {
+				slidesPerView: 1
 			}
 		}
 
