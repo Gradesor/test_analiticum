@@ -105,4 +105,14 @@ $(document).ready(function () {
 			}
 		}
 	})
+	//прикручиваем попап
+	$('.preview__btn').on('click', function(){
+		$('.popup').addClass('popup_active')
+	})
+	$('.cutaway-right__btn').on('click', function () {
+		$('.popup').addClass('popup_active')
+	})
+	$('.popup__exit').on('click', function () {
+		$('.popup').removeClass('popup_active')
+	})
 })
