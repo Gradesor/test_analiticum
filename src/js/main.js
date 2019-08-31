@@ -39,7 +39,8 @@ $(document).ready(function () {
 				slidesPerView: 2
 			},
 			576: {
-				slidesPerView: 1
+				slidesPerView: 1,
+				spaceBetween: 10
 			}
 		}
 
@@ -64,9 +65,44 @@ $(document).ready(function () {
 				slidesPerView: 2
 			},
 			576: {
-				slidesPerView: 1
+				slidesPerView: 1,
+				spaceBetween: 10
 			}
 		}
-
+	})
+	// маска телефона
+	$('input[name="phone"]').mask('+7 (999) 999-99-99')
+	// валидация формы
+	$('.bid-form').validate({
+		errorClass: "bid__invalid",
+		errorElement: "div",
+		rules: {
+			username: {
+				required: true,
+				minlength: 2,
+				maxlength: 15
+			},
+			phone: {
+				required: true
+			},
+			email: {
+				required: true,
+				email: true
+			}
+		},
+		messages: {
+			username: {
+				required: "Заполните поле",
+				minlength: jQuery.validator.format("Минимальная длинна: 2"),
+				maxlength: jQuery.validator.format("Максимальная длинна: 15")
+			},
+			phone: {
+				required: "Укажите телефон",
+			},
+			email: {
+				required: "Заполните поле",
+				email: "Введите корректный email"
+			}
+		}
 	})
 })

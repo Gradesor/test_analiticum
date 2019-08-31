@@ -1,0 +1,117 @@
+.cutaway
+	background-image: url('../img/about-bg.jpg')
+	background-repeat: no-repeat
+	background-position: center
+	background-size: cover
+	height: 100%
+	display: flex
+	align-items: center
+	justify-content: center
+	color: $text
+	padding-bottom: 100px
+	padding-top: 100px
+	&__block
+		display: flex
+		justify-content: center		
+	&__title
+		display: inline-block
+		text-transform: uppercase
+		margin-bottom: 20px
+		width: 272px
+		&:after
+			width: 14px
+			height: 12px
+			right: -27px
+			bottom: 35%
+		&:before
+			display: none
+	&-left
+		width: 37%
+		display: flex
+		flex-direction: column
+		margin-right: 110px
+		& div[class="cutaway-right"]
+			display: none
+		&__text
+			font-size: 20px
+			line-height: 30px
+			margin-bottom: 30px
+		&__descr
+			+med
+			font-size: 20px
+			margin-bottom: 15px
+		&__link
+			font-size: 20px
+			color: $text
+			margin-bottom: 10px
+			text-decoration: none
+		&__demand
+			font-size: 20px
+			margin-bottom: 26px
+		&__img
+			width: 278px
+			height: 91px
+	&-right
+		&__img
+			width: 311px
+			height: 311px
+			margin-bottom: 42px
+			& img
+				border-radius: 50%
+		&__btn
+			margin: 0 auto
+			cursor: pointer
+			width: 220px
+			height: 50px
+			border: none
+			display: flex
+			justify-content: center
+			align-items: center
+			background-color: $text-hover
+			color: #fff
+			font-size: 16px
+			text-transform: uppercase
+			border-radius: 2px
+@media (max-width: 768px)
+	.cutaway
+		padding-top: 45px
+		padding-bottom: 50px
+		&__title
+			width: 136px
+			&:after
+				bottom: 30%
+		&-right
+			display: none 
+			&__img
+				margin-bottom: 25px
+			&__btn
+				margin-bottom: 40px
+		&-left
+			padding-left: 28px
+			padding-right: 32px
+			width: 100%
+			margin-right: 0
+			& div[class="cutaway-right"]
+				display: flex
+				flex-direction: column
+				align-items: center
+			&__text
+				font-size: 18px
+				line-height: 27px
+			&__descr
+				font-size: 18px
+			&__img
+				margin: 0 auto
+@media (max-width: 576px) and (min-width: 320px)
+	.cutaway
+		&-left
+			padding-left: 20px
+			padding-right: 24px
+		&-right
+			&__img
+				width: 185px
+				height: 185px
+			&__btn
+				width: 200px
+				height: 40px
+ 

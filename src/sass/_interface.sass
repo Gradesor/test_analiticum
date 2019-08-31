@@ -47,6 +47,16 @@ body
 		filter: FlipH
 .text-uppercase
 	text-transform: uppercase
+@mixin input-placeholder
+  &.placeholder 		
+		&:-moz-placeholder
+			@content
+		&::-moz-placeholder
+			@content
+		&:-ms-input-placeholder
+			@content
+		&::-webkit-input-placeholder
+			@content
 @media (min-width: 992px)
 	.nav
 		&-menu
@@ -81,16 +91,23 @@ body
 	.bid-form__link:hover
 		transition: 0.3s
 		color: $text-hover
-@mixin input-placeholder
-  &.placeholder 		
-		&:-moz-placeholder
-			@content
-		&::-moz-placeholder
-			@content
-		&:-ms-input-placeholder
-			@content
-		&::-webkit-input-placeholder
-			@content
+.footer
+	&-menu
+		&__link:hover
+			transition: 0.3s
+			color: $text-hover		
+	&-lid
+		&__phone:hover
+			transition: 0.3s
+			color: $text-hover		
+		&__icon:hover
+			transition: 0.3s
+			color: darken(desaturate($text-hover, 3.57), 8.63)
+			border-color: darken(desaturate($text-hover, 3.57), 8.63)
+		&__btn:hover
+			transition: 0.3s
+			color: $burger
+			border-color: $burger	
 @media (max-width: 768px)
 	.title
 		font-size: 20px
