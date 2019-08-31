@@ -158,4 +158,60 @@ $(document).ready(function () {
 		}, 1000);
 		e.preventDefault();
 	});
+	$.scrollify({
+		section: ".slide",
+		sectionName: "section-name",
+		easing: "easeOutExpo",
+		scrollSpeed: 1100,
+		offset: 10,
+		scrollbars: false,
+		standardScrollElements: "",
+		setHeights: true,
+		overflowScroll: true,
+		updateHash: true,
+		touchScroll: true
+	});
+	// по блочная прокрутка страницы
+	
+	/*var windowHeight = $(window).height();
+
+	 $(document).on('scroll', function () {
+				height = 0;
+			var selfAbout = $('#about'),
+				height1 = selfAbout.height() + 20;
+			var selfProduct = $('#product'),
+				height2 = selfProduct.height() + selfProduct.height();
+			// var selfProduction = $('#production'),
+			// 	height3 = selfProduction.height() + 20;
+			// var selfFeedback = $('#feedback'),
+			// 	height4 = selfFeedback.height() + 20;
+			// var selfPromotions = $('#promotions'),
+			// 	height5 = selfPromotions.height() + 20;
+			// var selfCutaway = $('#cutaway'),
+			// 	height6 = selfCutaway.height() + 20;
+			console.log(height)
+			console.log(height1)
+			console.log($(document).scrollTop() )
+			
+		
+			if (($(document).scrollTop() + windowHeight >= height1) && ($(document).scrollTop() + windowHeight <= height2)) {
+				$('html,body').stop().animate({
+					scrollTop: $('#about').offset().top
+				}, 50);
+			} else if (($(document).scrollTop() < height1) && ($(document).scrollTop() >= height)) {
+				$('html,body').stop().animate({
+					scrollTop: $('#top').offset().top
+				}, 50);
+			}
+		
+			// if ($(document).scrollTop() + windowHeight >= height) {
+			// 	$('html,body').stop().animate({
+			// 		scrollTop: $('#product').offset().top
+			// 	}, 100);
+			// } else if ($(document).scrollTop() + windowHeight == height2){
+			// 	$('html,body').stop().animate({
+			// 		scrollTop: $('#about').offset().top
+			// 	}, 100);
+			// }		
+	}); */
 })

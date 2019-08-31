@@ -9,7 +9,7 @@
 	<title>Бобров Кухни</title>
 </head>
 <body>
-	<div class="slide">
+	<div id="top" class="slide">
 		<div class="slide__item">
 			<nav class="nav">
 				<div class="container">
@@ -261,28 +261,32 @@
 			</div>
 		</div>		
 	</header>
-	<footer class="footer">
-		<div class="container footer-cont">
-			<div class="footer__block">
-				<div class="footer-menu">
-					<a href="#about" name="anchor-about" class="footer-menu__link">О компании</a>
-					<a href="#product" name="anchor-product" class="footer-menu__link">Наши работы</a>
-					<a href="#production" name="anchor-production" class="footer-menu__link">Производство</a>
-					<a href="#feedback" name="anchor-feedback" class="footer-menu__link">Отзывы</a>
-					<a href="#promotions" name="anchor-promotions" class="footer-menu__link">Акции</a>
-					<a href="#cutaway" name="anchor-cutaway" class="footer-menu__link">Контакты</a>
+	<div class="slide slide-footer" id="production">
+		<div class="slide__item">
+			<footer class="footer">
+				<div class="container footer-cont">
+					<div class="footer__block">
+						<div class="footer-menu">
+							<a href="#about" name="anchor-about" class="footer-menu__link">О компании</a>
+							<a href="#product" name="anchor-product" class="footer-menu__link">Наши работы</a>
+							<a href="#production" name="anchor-production" class="footer-menu__link">Производство</a>
+							<a href="#feedback" name="anchor-feedback" class="footer-menu__link">Отзывы</a>
+							<a href="#promotions" name="anchor-promotions" class="footer-menu__link">Акции</a>
+							<a href="#cutaway" name="anchor-cutaway" class="footer-menu__link">Контакты</a>
+						</div>
+						<div class="footer-lid">
+							<div class="footer-lid__item">
+								<a href="tel:+78008009090" class="footer-lid__phone">+7 800 800-90-90</a>
+								<a href="#" class="footer-lid__icon"></a>
+								<a href="#" class="footer-lid__icon"></a>
+							</div>					
+							<a href="#bid" name="anchor-bid" class="footer-lid__btn">Обратная связь</a>
+						</div>
+					</div>
 				</div>
-				<div class="footer-lid">
-					<div class="footer-lid__item">
-						<a href="tel:+78008009090" class="footer-lid__phone">+7 800 800-90-90</a>
-						<a href="#" class="footer-lid__icon"></a>
-						<a href="#" class="footer-lid__icon"></a>
-					</div>					
-					<a href="#bid" name="anchor-bid" class="footer-lid__btn">Обратная связь</a>
-				</div>
-			</div>
+			</footer>
 		</div>
-	</footer>
+	</div>
 	<div class="popup">
 		<div class="popup__block">
 			<span class="popup__exit"></span>
@@ -304,6 +308,8 @@
 	<script src="js/lib/jquery.validate.min.js"></script>
 	<script src="js/lib/jquery.maskedinput.min.js"></script>
 	<script src="js/lib/swiper.js"></script>
+	<script src="js/lib/jquery.easing.min.js"></script>
+	<script src="js/lib/jquery.scrollify.min.js"></script>
 	<script src="js/main.js"></script>
 </body>
 </html>

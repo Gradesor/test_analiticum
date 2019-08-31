@@ -396,6 +396,11 @@ h1, h2, h3, p {
   width: 100%;
 }
 
+.slide-footer {
+  height: auto;
+  min-height: auto;
+}
+
 .container {
   max-width: 1300px;
   padding-left: 30px;
